@@ -1,9 +1,7 @@
 package com.dsm.mx.api;
 
-import com.dsm.mx.dto.Account;
+import com.dsm.mx.dto.AccountDto;
 import org.springframework.web.bind.annotation.*;
-
-import javax.websocket.server.PathParam;
 
 @RestController
 public class HelloWorldPaco {
@@ -35,8 +33,8 @@ public class HelloWorldPaco {
     }
 
     @PostMapping(value = "/accounts")
-    public String newAccount(@RequestBody Account account){
-        System.out.println("Se recibe: " + account);
+    public String newAccount(@RequestBody AccountDto accountDto){
+        System.out.println("Se recibe: " + accountDto);
         return "Cuenta registrada";
     }
 
