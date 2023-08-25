@@ -1,6 +1,6 @@
 package com.dsm.mx.dto;
 
-public class Account {
+public class AccountDto {
     //a class has attributes or properties
     //a class has one or more constructors
     //getters and setters
@@ -9,10 +9,10 @@ public class Account {
     private Long balance;
     private String accountType;
 
-    public Account() {
+    public AccountDto() {
     }
 
-    public Account(String accountId, String accountName, Long balance, String accountType) {
+    public AccountDto(String accountId, String accountName, Long balance, String accountType) {
         this.accountId = accountId;
         this.accountName = accountName;
         this.balance = balance;
